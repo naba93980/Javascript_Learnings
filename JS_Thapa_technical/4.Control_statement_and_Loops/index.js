@@ -146,7 +146,31 @@ similar to other stack-allocated vars.
 */
 var tableOf = 12;
 var num = 10;
+//count is index(number) here
 for (var count = 1; count <= num; count++)
 {
     console.log(tableOf + " * " + count + " = " + tableOf *count);
+}
+
+console.log( "-----------------for in ---------------");
+var myfriends = ['ram', 'shyam', 5, true, null, undefined];
+//keysss is key of object here
+for (var keysss in myfriends) {  
+    console.log( keysss );
+    const element = myfriends[keysss];   
+    console.log( element );       
+}
+console.log( myfriends[0] );
+
+//since arrays are also object, so the array is internally stored as objects, where the
+//indexes are  basically keys and elements at that indexes are values of that key.
+//now since in object in js every key is stored/coerced as a string, so every index initially
+//entered as integers gets coerced as string.
+
+console.log("-----------------for of ---------------");
+//elements is iterator of object
+for (const elements of myfriends) {
+        console.log( elements );
+        
+        
 }
