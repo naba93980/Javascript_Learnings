@@ -85,10 +85,13 @@ function sum(a, b)
 sum(3, 4);
 console.log(sum instanceof (Function));
 
-const summation = () => { return 5 + 6; }
+const summation = () => { return 5 + 6; } //jodi eikhane brace na dita taile ei ekta statement tai return korbo, brace thakle return statement tao use korte hoibo.
 console.log(typeof (summation));
-   console.log( summation() );
-    
+    console.log( summation() );
+
+// Likewise, if the body requires additional lines of processing, you'll need to re-introduce braces PLUS the "return" 
+
+//A function without a return statement will return a default value. In the case of a constructor called with the new keyword, the default value is the value of its this parameter. For all other functions, the default return value is undefined .
 
 (() => { console.log(5 + 6); })() //IIFE
 
