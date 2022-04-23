@@ -40,7 +40,7 @@ myFriends.forEach((element,index,array) => {
     console.log( element );
     
 });
-console.log( "-------------------------------" );
+console.log( "-----------*****--------------------" );
 
 myFriends.forEach((element, index, myFriends) => {
     console.log(element); return 0;
@@ -61,6 +61,8 @@ console.log(namesofMyfriends.lastIndexOf('akash'));//Returns the index of the la
 console.log(namesofMyfriends.lastIndexOf('jhakas',2));//searches backward from index 2
 console.log(namesofMyfriends.includes('jhakas')); //returns boolean val.
 console.log(namesofMyfriends.includes('jhakas',3)); //starts searching from index 3
+console.log(namesofMyfriends.indexOf('ak'));
+console.log( "#####*******$$$$" );
 
 const myPrices = [100, 200, 300, 400, 500];
 //Returns the found element in the array, if some element in the  array satisfies the testing function, or undefined if not found. Only problem is that it return only one element
@@ -93,4 +95,84 @@ console.log(myPrices.findIndex((element, index) => {
 
 //callback functions in both cases above must return a truthy value(usually after the conditon matches but also may not return even if condition matches), if callbck fn returns truthy val then find() returns the value if not then undefined , in findindex returns index of that element if not then -1.
 
+//filter creates new array of elements for which the callbackfn returns a truthy value
+console.log(myPrices.filter((element, indes) => {
+    if ((element >200)&&((element%100) == 0))
+        return "element"; //truthy value is being returned so, element get added to new array.
+}))
+//filter() calls a provided callbackFn function once for each element in an array, and constructs a new array of all the values for which callbackFn returns a value that coerces to true.
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
+//sort
+// The sort() method sorts the elements of an array in place and i
+//returns the sorted array. The default sort order is ascending, built |
+//upon converting the elements into strings, |
+// then comparing their sequences of UTF-16 code units values. |
+
+
+// sort() sorts the original array
+let months = ['march', 'April','DEC'] //in unicode A comes before D then  comes 'm'
+console.log( months.sort() );
+let nummbers = [4, 20000, 600, 80, 275, 6, 9]; //gets converted to string inside sort so 20000<275
+console.log(nummbers.sort());
+console.log(nummbers);
+
+//push unshift , pop shift mutates the original array
+let animals = ['dog', 'cat', 'rat'];
+console.log(animals.push('elephant','cow')); //returns lenth of mutated array
+console.log(animals);
+console.log(animals[animals.length-1]);
+console.log(animals.unshift('peacock', 'donkey'));//adds into array from begging in the same order as pushed and returns length of new array
+console.log(animals);
+console.log(animals.pop() );//removes the last element from array and returns it
+console.log(animals.shift());//removes the first element from array and returns it
+console.log(animals);
+
+//splice method mutates the original array.
+//The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements
+
+// splice(start, deleteCount, item1, item2, itemN)
+
+// start - The index at which to start changing the array.
+
+            //If greater than the length of the array, start will be set to the length of the array. In this case, no element will be deleted but the method will behave as an adding function, adding as many elements as items provided.
+            //If negative, it will begin that many elements from the end of the array....-n is the index of the nth last element, and is therefore equivalent to the index of array.length - n. If start is negative infinity, it will begin from index 0.
+
+//deleteCount Optional-  An integer indicating the number of elements in the array to remove from start.
+            //If deleteCount is omitted, or if it is equal to or greater than the number of elements left in the array, starting at start), then all the elements from start to the end of the array will be deleted. However, it must not be omitted if there is any item1 parameter.
+            // If deleteCount is 0 or negative, no elements are removed. In this case, you should specify at least one new element.
+
+//item1, item2, ... - The elements to add to the array/add to array in place of deleted elements, beginning from start. If you do not specify any elements, splice() will only remove elements from the array
+
+/*
+Return value - An array containing the deleted elements. If only one element is removed, an array of one element is returned.
+If no elements are removed, an empty array is returned.
+
+Description - If the specified number of elements to insert differs from the number of elements being removed, the array's length will be changed.
+*/
+
+console.log(animals.splice(1, 3, 'akash'));
+console.log(animals);
+let myGoals = ['a', 'v', 'r', 'i', 'f'];
+console.log(myGoals.splice(1, 0, 'b'));
+console.log( myGoals );
+console.log(myGoals.splice(-3, 2, 'xyz'));
+console.log( myGoals );
+console.log(myGoals.splice(1));
+console.log( myGoals );
+console.log(myGoals.splice(20,34,'hi','hello'));
+console.log( myGoals );
+console.log(myGoals.splice(myGoals.length-1,34,'huhu','hey'));
+console.log(myGoals);
+var indexOfhi = myGoals.indexOf("hi");
+console.log(indexOfhi);
+myGoals.splice(1, indexOfhi, 'HI')
+console.log( myGoals );
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+//slice - The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+
+console.log( myGoals.slice(0,2) );
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+//https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy
