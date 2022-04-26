@@ -45,6 +45,11 @@ console.log( "-----------*****--------------------" );
 myFriends.forEach((element, index, myFriends) => {
     console.log(element); return 0;
 });
+
+// forEach() executes the callbackFn function once for each array element; unlike map() or reduce() it always returns the value undefined and is not chainable. The typical use case is to execute side effects at the end of a chain.
+// forEach() does not mutate the array on which it is called. (However, callbackFn may do so)
+
+
 //for in - gives only index number,
 //for of - gives only elements,
 //forEach - gives both elements and index, cant use break, continue statement
