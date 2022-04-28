@@ -109,3 +109,5 @@ console.log(typeof (summation));
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function#using_a_function_as_a_callback
+
+//https://www.w3schools.com/jsref/jsref_eval.asp

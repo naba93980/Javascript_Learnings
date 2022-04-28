@@ -67,6 +67,7 @@ console.log(namesofMyfriends.lastIndexOf('jhakas',2));//searches backward from i
 console.log(namesofMyfriends.includes('jhakas')); //returns boolean val.
 console.log(namesofMyfriends.includes('jhakas',3)); //starts searching from index 3
 console.log(namesofMyfriends.indexOf('ak'));
+console.log(namesofMyfriends.at(namesofMyfriends.length-2)); //returns the element present at the argument index works in browser, namesofMyfriends and the at() property is found in 
 console.log( "#####*******$$$$" );
 
 const myPrices = [100, 200, 300, 400, 500];

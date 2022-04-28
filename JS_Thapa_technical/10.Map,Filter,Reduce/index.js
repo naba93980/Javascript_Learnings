@@ -62,3 +62,16 @@ console.log(myMarks.reduce((sumofMarks, element, index, myMarks) => {
 
 //map gives new array consisting of all new elements, filter filters certain values from original map and put a copy of those values
 //in a new array , reduce reduces elements of the array to a certain value based on certain logic given in the callback function
+
+var at = [
+    
+    ['zone 1', 'zone 2'],
+    ['zone 3', 'zone 4'],
+    ['zone 5', 'zone 6'],
+    ['zone 7', ['zone 8', 'zone 9']],
+]
+console.log(at.reduce((subarrayaccumulator, currsubarray) => {
+    subarrayaccumulator = subarrayaccumulator.concat(currsubarray); //concat() used to concatenate strings or array of characters(in js arry of characters or array of strings)
+    return subarrayaccumulator;
+    }))
+//reduce can also be used to flatten array but better to use another process as given in ES6
