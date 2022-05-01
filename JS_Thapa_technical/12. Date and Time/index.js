@@ -99,4 +99,4 @@ console.log(d5.setMilliseconds(1000));
 console.log(d5.getMilliseconds());
 
 
-//after dom check date object webpage from 8:10:00;
+//after dom check date object in webpage from 8:10:00;
