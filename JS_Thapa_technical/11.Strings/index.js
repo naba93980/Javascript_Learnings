@@ -81,3 +81,10 @@ var sttr = "             hhee     hghf    "; //removes whitespaces before the no
 console.log( sttr.trim() );
 
 
+//split
+
+//a string can be converted to an arry using split()
+
+var txt = "abcgfgyeygfhbafd gygfhfhfghfb";
+console.log( txt.split('g') ); 
+//[ 'abc', 'f', 'yey', 'fhbafd ', 'y', 'fhfhf', 'hfb' ]
