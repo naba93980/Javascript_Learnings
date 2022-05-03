@@ -26,4 +26,3 @@
 // document.body.nextElementSibling
 // document.body.previousSibling
 // document.body.previousElementSibling
-console.log(document.body.firstElementChild);
