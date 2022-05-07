@@ -1,0 +1,20 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+    <script src="index.js" defer></script>
+    <!-- using defer extecutes the js code after the html is parsed, we can also use type=module in place of defer in case js files are bundles in a module  -->
+  </head>
+  <body>
+    <button id="btn1" onclick="alert('hello, this is first way')">
+      press me</button
+    ><!-- dont use -->
+    <button onclick="fun2()">press me</button
+    ><!-- inline event, better not to use -->
+    <button id="btn3">press me</button>
+    <!-- <script src="index.js"></script>  putting the script tag also executes js code after html is parsed-->
+    <button id="btn4">press me</button>
+  </body>
+</html>
