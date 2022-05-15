@@ -21,7 +21,7 @@ console.log( new Date().toLocaleDateString());
 console.log(new Date().toLocaleTimeString());
 console.log( new Date().toLocaleString() );
 //Date.now() --> Returns the numeric value corresponding to the current time-the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC
-console.log( Date.now()); //now() is property of Date constructor function.
+console.log( Date.now()); //now() is property of Date constructor function./that is now() is static method of Date class
 console.log( new Date(1651349957383).toLocaleString() );
 
 //2nd way --> new Date(year, month, day, hours, minutes, seconds, milliseconds)

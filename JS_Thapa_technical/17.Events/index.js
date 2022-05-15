@@ -65,7 +65,18 @@ btn4.addEventListener("mousedown", (e) => {
     // console.warn( e,e.target,e.type );
     window.document.documentElement.style.backgroundColor = "red";
 })
+//keyboard events
+document.addEventListener("keydown", (whichevent) => {
+    document.getElementById("keyss").innerHTML = "how are y";
+    console.log(whichevent);
+})
+//input events    
+    
+document.getElementById("selectflavour").addEventListener('change', () => {
+    document.getElementById("result").innerHTML = `${document.getElementById("name").value} loves ${document.getElementById("selectflavour").value}`;
+})
+
 
 
 //you can call addEventListener('click', handler) on an element multiple times, with different functions specified in the second argument
-//With event handler properties, you can't add more than one handler for a single event
+//With onevent event_handler properties, you can't add more than one handler for a single event(gets overwritten)
