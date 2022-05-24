@@ -34,14 +34,14 @@
 //object properties
 
 //------adding dynamic properties-------
-let myName = 22;
+let myName = "naba";
 const bio = {[myName]:"is a good boy"} //dynamically setting 'literal value' of key
 const bio1 = {myName} //myName here is a variable refering to the myName variable defined outside 
 const bio2 = {myName: "is a good boi"}
 const bio3 = {myAge: [myName]}//value is an array here
 const bio4 = {myAge: myName}
 console.log(bio);
-console.log(bio1); 
+console.log(bio1["myName"]); 
 console.log(bio2); 
 console.log(bio3); 
 console.log(bio4); 

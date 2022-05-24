@@ -1,17 +1,17 @@
-let sirname = 23;
-let age = 22;
-let bioData = {
-    "namee": "naba",
-    [sirname]: "modak",
-    sirname,
-    myage: age,
-}
-console.log( bioData );  
-console.log( bioData.namee );
-console.log( bioData.sirname );
-console.log( bioData["23"] );
-console.log( bioData["sirname"] );
-console.log( bioData["myage"] );
+// let sirname = 23;
+// let age = 22;
+// let bioData = {
+//     "namee": "naba",
+//     [sirname]: "modak",
+//     sirname,
+//     myage: age,
+// }
+// console.log( bioData );  
+// console.log( bioData.namee );
+// console.log( bioData.sirname );
+// console.log( bioData["23"] );
+// console.log( bioData["sirname"] );
+// console.log( bioData["myage"] );
 //non string keys are coerced into string
 //values has to be either literals or identifiers
 //In the object.property syntax, the property must be a valid JavaScript identifier.
@@ -28,3 +28,44 @@ console.log( bioData["myage"] );
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#method_binding
+let nameee = function () {
+    console.log(this);
+    function gg()
+        {
+            console.log( "inside inner" );
+            
+            console.log(this);    
+        };
+        gg();
+    
+}
+const obj = {
+    age:15,
+    nameee,
+    namki: function ()
+    {
+        console.log(this);
+        function gg()
+        {
+            console.log( "inside inner" );
+            
+            console.log(this);    
+        };
+        gg();
+    }            
+}
+console.log( obj["age"]);
+console.log( obj["nameee"]);
+console.log( obj["namki"]);
+obj["namki"]();
+obj["nameee"]();
+nameee();
+obj.nameee();
+console.log( "------------------------" );
+
+obj["namki"]();
+obj["nameee"]();
+nameee();
+
+
+
