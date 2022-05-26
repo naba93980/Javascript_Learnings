@@ -6,7 +6,7 @@
 //     sirname,
 //     myage: age,
 // }
-// console.log( bioData );  
+// console.log( bioData );
 // console.log( bioData.namee );
 // console.log( bioData.sirname );
 // console.log( bioData["23"] );
@@ -28,6 +28,7 @@
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#method_binding
+/*
 let nameee = function () {
     console.log(this);
     function gg()
@@ -66,6 +67,31 @@ console.log( "------------------------" );
 obj["namki"]();
 obj["nameee"]();
 nameee();
+*/
+let bio = {
+    "name": "nabajyoti",
+    goodname: {
+        first: "papai",
+        last: "modak",
+    },
+    setData: function ()
+    {
+        this.name = "nabajyoti modak";
+    },
+    getData() {
+       console.log( bio.name );
+        
+    }
+}
+console.log(bio.name);
+bio.setData();
+console.log(bio["name"]);
+console.log( bio.goodname );
+console.log( bio.goodname.first );
+console.log( bio["goodname"].first );
+console.log( bio["goodname"]["first"] );
+
+ 
 
 
 
