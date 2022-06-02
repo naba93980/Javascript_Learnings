@@ -1,0 +1,26 @@
+.grand{
+    border-style: solid;
+    border-color: black;
+    height:100px;
+    width: 100px;
+    margin-left: 50%;
+    background-color: blue;
+}
+.parent{
+    border-style: solid;
+    border-color: black;
+    height:80px;
+    width: 80px;
+    margin-left: 10%;
+    margin-top: 10%;
+    background-color: rgb(12, 250, 12);
+}
+.child{
+    border-style: solid;
+    border-color: black;
+    height:60px;
+    width: 60px;
+    margin-left: 10%;
+    margin-top: 10%;
+    background-color: red;
+}
