@@ -118,12 +118,11 @@
 
 // NaN Practice 🤯
 
-  
 
-// NaN === NaN;        
-// Number.NaN === NaN; 
-// isNaN(NaN);         
-// isNaN(Number.NaN);  
+// NaN === NaN;
+// Number.NaN===NaN;
+// isNaN(NaN);
+// isNaN(Number.NaN);
 // Number.isNaN(NaN);
 
 
