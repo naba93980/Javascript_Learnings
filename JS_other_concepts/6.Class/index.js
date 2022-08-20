@@ -25,6 +25,8 @@ class Vehicle{
         console.log( "go faster" );        
     }
     justAMethod() {
+        console.log( "inside jam of Vehicle" );
+        
         //write code, no need to put function keyword before justAMethod()
     }
 }
@@ -48,6 +50,9 @@ class Car extends Vehicle{
     info()
     {        
         console.log(`The ${this.make}, ${this.model} was made in ${this.year} and has ${this.whls} wheels`);        
+    }
+    justAMethod() {
+        console.log( "inside jam of car" );
     }
 }
 
