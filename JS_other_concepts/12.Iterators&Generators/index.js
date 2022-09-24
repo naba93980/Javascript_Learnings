@@ -5,14 +5,23 @@ function fruitsIterator(values) {
     return {
         next: function () {
             if (nextIndex < values.length) {
-                return {
-                    value: values[nextIndex++],
-                    done: false
+                if (nextIndex === values.length - 1) {
+                    return {
+                        value: values[nextIndex++],
+                        done: true
+                    }
                 }
+                else {
+                    return {
+                        value: values[nextIndex++],
+                        done: false
+                    }
+                }
+
             }
             else {
                 return {
-                    value:null,
+                    value: null,
                     done: true
                 }
             }
