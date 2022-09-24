@@ -12,6 +12,7 @@ function fruitsIterator(values) {
             }
             else {
                 return {
+                    value:null,
                     done: true
                 }
             }
