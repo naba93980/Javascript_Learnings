@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/68647965/what-is-the-difference-between-iterable-and-enumerable-in-js-i-am-going-through#:~:text=It%20simply%20means%20that%20the,for%E2%80%A6in%20loop%20or%20Object.
